@@ -1,8 +1,6 @@
-# ==========================================
 # IMPORTACION DE MODULOS
 # Se importan las funciones necesarias para integrar
 # la gestion de libros, prestamos y ordenamiento.
-# ==========================================
 
 from acceso import iniciar_sesion
 from gestion_libros import (
@@ -20,12 +18,9 @@ from gestion_prestamos import (
 )
 from ordenamiento import ordenar_burbuja, ordenar_seleccion
 
-
-# ==========================================
 # MENU DEL ESTUDIANTE
 # Permite consultar libros, solicitar prestamos
 # y realizar devoluciones.
-# ==========================================
 
 def menu_estudiante(libros, prestamos, codigo):
     while True:
@@ -52,12 +47,9 @@ def menu_estudiante(libros, prestamos, codigo):
         else:
             print("Opcion no valida.")
 
-
-# ==========================================
 # MENU DEL BIBLIOTECARIO
 # Permite administrar libros, prestamos,
 # devoluciones y metodos de ordenamiento.
-# ==========================================
 
 def menu_bibliotecario(libros, prestamos):
     while True:
@@ -101,12 +93,9 @@ def menu_bibliotecario(libros, prestamos):
         else:
             print("Opcion no valida.")
 
-
-# ==========================================
 # INICIO E INTEGRACION DEL SISTEMA
 # Inicializa los libros y prestamos y conecta
 # el acceso con los menus correspondientes.
-# ==========================================
 
 def iniciar_sistema():
 
