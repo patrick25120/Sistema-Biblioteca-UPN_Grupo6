@@ -1,5 +1,7 @@
 from validaciones import validar_texto, validar_codigo_libro
 
+#Registra un libro con su código, título, autor y estado inicial,
+#y lo agrega a la lista de libros.
 def registrar_libro(libros):
     codigo = validar_codigo_libro(libros)
     titulo = validar_texto("Ingrese el titulo: ")
@@ -15,7 +17,8 @@ def registrar_libro(libros):
     libros.append(libro)
     print("Libro registrado correctamente.")
 
-
+#Muestra todos los libros registrados con sus datos y estado, 
+#o informa si la lista está vacía.
 def mostrar_libros(libros):
     if len(libros) == 0:
         print("No hay libros registrados.")
