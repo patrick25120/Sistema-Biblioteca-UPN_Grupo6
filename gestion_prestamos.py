@@ -2,6 +2,7 @@ def registrar_prestamo(libros, prestamos, codigo_estudiante):
     # Solicita al usuario el código del libro, elimina espacios en blanco y lo convierte a mayúsculas
     codigo = input("Ingrese el codigo del libro: ").strip().upper()
 
+    # Recorre la lista de libros disponibles en el sistema
     for libro in libros:
         if libro["codigo"] == codigo:
 
