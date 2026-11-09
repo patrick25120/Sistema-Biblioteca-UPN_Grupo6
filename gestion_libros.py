@@ -32,7 +32,8 @@ def mostrar_libros(libros):
             print("Autor:", libro["autor"])
             print("Estado:", libro["estado"])
 
-
+#Busca un libro por su código y muestra sus datos si lo encuentra; 
+#de lo contrario, informa que no existe.
 def buscar_libro(libros):
     codigo = input("Ingrese el codigo del libro: ").strip().upper()
 
@@ -47,7 +48,8 @@ def buscar_libro(libros):
     print("Libro no encontrado.")
     return None
 
-
+#Busca un libro registrado y permite 
+#modificar su título y autor si lo encuentra.
 def modificar_libro(libros):
     libro = buscar_libro(libros)
 
@@ -57,6 +59,8 @@ def modificar_libro(libros):
 
         print("Libro modificado correctamente.")
 
+#Busca un libro y lo elimina si está disponible; 
+#si está prestado, impide su eliminación.
 
 def eliminar_libro(libros):
     libro = buscar_libro(libros)
